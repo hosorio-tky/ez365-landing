@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad - EZ365</title>
+  <meta name="description" content="Política de Privacidad de EZ365 para usuarios registrados de EZ365." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111b2e;
+      --text:#e8eefc;
+      --muted:#b6c2e2;
+      --accent:#7aa2ff;
+      --border:rgba(255,255,255,.10);
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: linear-gradient(180deg, var(--bg) 0%, #080d18 100%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    header{
+      padding:32px 16px 8px;
+      max-width:980px;
+      margin:0 auto;
+    }
+    h1{ margin:0 0 8px; font-size:28px; }
+    .sub{ color:var(--muted); margin:0; }
+    main{
+      max-width:980px;
+      margin:0 auto;
+      padding:16px;
+    }
+    .card{
+      background: rgba(17,27,46,.92);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:18px;
+      margin:14px 0;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    }
+    h2{ font-size:18px; margin:0 0 10px; }
+    h3{ font-size:15px; margin:16px 0 8px; color:var(--accent); }
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ margin:6px 0; }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .muted{ color:var(--muted); }
+    .badge{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      font-size:12px;
+      margin-left:8px;
+    }
+    footer{
+      max-width:980px;
+      margin:0 auto;
+      padding:8px 16px 32px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    code{
+      background: rgba(255,255,255,.06);
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid var(--border);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Política de Privacidad — EZ365 <span class="badge">EZ365</span></h1>
+  <p class="sub">Última actualización: <strong>2026-02-17</strong></p>
+  <p class="sub muted">Esta política describe cómo Insul-Techs (“nosotros”) recopila y usa información cuando utilizas EZ365 (“la Aplicación”).</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>1. Alcance</h2>
+    <p>
+      EZ365 es una aplicación destinada <strong>exclusivamente a clientes registrados de EZ365</strong>.
+      El acceso a la Aplicación requiere autenticación mediante <strong>usuario y contraseña</strong>.
+    </p>
+    <p class="muted">
+      Si no eres un usuario autorizado de EZ365, no debes usar la Aplicación.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>2. Información que recopilamos</h2>
+    <div class="grid">
+      <div>
+        <h3>2.1 Datos de cuenta y autenticación</h3>
+        <ul>
+          <li>Identificadores de usuario de EZ365 (por ejemplo, <code>user_id</code> o equivalente).</li>
+          <li>Credenciales y tokens de sesión necesarios para iniciar sesión y mantener la sesión activa.</li>
+        </ul>
+
+        <h3>2.2 Ubicación (tracking durante clock-in)</h3>
+        <ul>
+          <li><strong>Ubicación precisa</strong> (GPS) mientras el usuario tiene una sesión activa de <strong>Clock In</strong> para registrar y visualizar rutas.</li>
+          <li>Metadatos asociados como fecha/hora, precisión aproximada (accuracy) y otros datos técnicos necesarios para el tracking.</li>
+        </ul>
+        <p class="muted">
+          La Aplicación utiliza la ubicación para brindar <strong>visibilidad de rutas</strong> y soporte operativo durante la jornada.
+          Si la ubicación está desactivada o el permiso no es otorgado, algunas funciones pueden quedar limitadas.
+        </p>
+      </div>
+
+      <div>
+        <h3>2.3 Notificaciones</h3>
+        <ul>
+          <li>Token de notificaciones push (por ejemplo, FCM/APNs) para enviarte alertas y mensajes operativos.</li>
+          <li>Eventos relacionados a <strong>proyectos asignados</strong>, cambios y avisos relevantes.</li>
+        </ul>
+
+        <h3>2.4 Datos técnicos</h3>
+        <ul>
+          <li>Tipo de dispositivo, sistema operativo y versión de la app.</li>
+          <li>Registros de diagnóstico (logs) para mejorar estabilidad y resolver incidentes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>3. Cómo usamos tu información</h2>
+    <ul>
+      <li><strong>Operación principal de la Aplicación:</strong> permitir el acceso a usuarios de EZ365 y mantener sesiones autenticadas.</li>
+      <li><strong>Clock In / Clock Out y trazabilidad:</strong> registrar la ubicación durante clock-in para <strong>visualizar rutas</strong> y apoyar la gestión operativa.</li>
+      <li><strong>Notificaciones:</strong> enviarte alertas sobre <strong>proyectos asignados</strong> y comunicaciones relevantes.</li>
+      <li><strong>Mejora del servicio:</strong> analizar fallos técnicos y mejorar rendimiento, seguridad y experiencia.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>4. Base legal y consentimiento</h2>
+    <p>
+      Tratamos tus datos para prestar el servicio solicitado por tu organización y por ti como usuario autorizado.
+      Cuando la normativa aplique, el uso de <strong>ubicación</strong> y <strong>notificaciones</strong> puede requerir tu consentimiento,
+      el cual se gestiona mediante los permisos del sistema operativo y/o avisos dentro de la Aplicación.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>5. Compartición de información</h2>
+    <p>No vendemos tus datos personales.</p>
+    <p>Podemos compartir información en los siguientes casos:</p>
+    <ul>
+      <li><strong>Con EZ365 / tu organización:</strong> para la operación, visibilidad de rutas, asignación y control de proyectos.</li>
+      <li><strong>Proveedores tecnológicos:</strong> servicios necesarios para operar (por ejemplo, notificaciones push, hosting, analítica/monitoreo de fallos). Estos proveedores procesan datos bajo instrucciones nuestras.</li>
+      <li><strong>Cumplimiento legal:</strong> si una autoridad competente lo requiere o para proteger derechos, seguridad e integridad del servicio.</li>
+    </ul>
+    <p class="muted">
+      Si necesitas que listemos proveedores específicos (ej: Firebase Cloud Messaging), indícalo y los agrego por nombre.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>6. Retención de datos</h2>
+    <p>
+      Conservamos la información únicamente durante el tiempo necesario para los fines descritos o según lo requiera tu organización y/o la ley aplicable.
+    </p>
+    <ul>
+      <li><strong>Ubicación y rutas:</strong> se conservan por un período definido por la política operativa de tu organización (ej. <code>90 días</code>) o el que se configure en EZ365.</li>
+      <li><strong>Logs técnicos:</strong> pueden conservarse por un período limitado para diagnóstico (ej. <code>30 días</code>).</li>
+    </ul>
+    <p class="muted">
+      Reemplaza los ejemplos con los tiempos reales que ustedes manejan.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>7. Seguridad</h2>
+    <p>
+      Implementamos medidas técnicas y organizativas razonables para proteger tu información contra acceso no autorizado,
+      alteración, divulgación o destrucción. Esto puede incluir cifrado en tránsito (HTTPS/TLS) y controles de acceso.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>8. Tus opciones y controles</h2>
+    <ul>
+      <li><strong>Permisos:</strong> puedes gestionar permisos de ubicación y notificaciones desde la configuración de tu dispositivo.</li>
+      <li><strong>Desactivación de ubicación:</strong> si desactivas la ubicación, algunas funciones (tracking en clock-in y visibilidad de rutas) pueden no operar correctamente.</li>
+      <li><strong>Solicitud de acceso/eliminación:</strong> puedes solicitar información o eliminación según las políticas de tu organización y la ley aplicable (ver Contacto).</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>9. Menores de edad</h2>
+    <p>
+      EZ365 no está dirigida a menores de edad. Si eres menor según la legislación aplicable, no utilices la Aplicación.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>10. Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta Política de Privacidad para reflejar cambios en la Aplicación o requisitos legales.
+      Publicaremos la versión actualizada en esta misma página e indicaremos la fecha de “Última actualización”.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>11. Contacto</h2>
+    <p>
+      Si tienes preguntas sobre esta Política de Privacidad o solicitudes relacionadas con tus datos, contáctanos:
+    </p>
+    <ul>
+      <li><strong>Empresa:</strong> Insul-Techs</li>
+      <li><strong>Correo:</strong> <a href="mailto:contact@insultechs.com">contact@insultechs.com</a></li>
+      <li><strong>Sitio web:</strong> <a href="https://insultechs.com/" target="_blank" rel="noopener">https://insultechs.com/</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> Insul-Techs. Todos los derechos reservados.
+  </p>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
